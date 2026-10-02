@@ -1,0 +1,1155 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #222;
+    background-color: white;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    background-color: #111827;
+    padding: 14px 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.navbar button img {
+    width: 25px;
+    height: 25px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links a:hover {
+    color: #d6d6d6;
+}
+
+
+/* =========================
+   HERO VIDEO
+========================= */
+
+.hero {
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 100%;
+    height: 100%;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   TOURISM INTRODUCTION
+========================= */
+
+.tourism {
+    width: 100%;
+    padding: 55px 15%;
+
+    text-align: center;
+    background-color: white;
+}
+
+.tourism h1 {
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.tourism-line {
+    width: 50px;
+    height: 2px;
+
+    background-color: #222;
+
+    margin: 0 auto 30px;
+}
+
+.tourism p {
+    max-width: 850px;
+
+    margin: 0 auto 25px;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    min-height: 480px;
+}
+
+
+/* LEFT IMAGE */
+
+.highlight-image {
+    width: 100%;
+    height: 480px;
+}
+
+.highlight-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* RIGHT CONTENT */
+
+.highlight-content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 70px;
+}
+
+.highlight-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.highlight-content h2 {
+    font-size: 34px;
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+.highlight-content p {
+    max-width: 520px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.highlight-content button {
+    padding: 14px 28px;
+
+    border: none;
+
+    background-color: #17233b;
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.highlight-content button:hover {
+    background-color: #253555;
+}
+
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.destinations {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background-color: #f7f7f7;
+}
+
+.destinations h2 {
+    font-size: 36px;
+    font-weight: 400;
+
+    margin-bottom: 15px;
+}
+
+.destinations > p {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.destination-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.destination {
+    background-color: white;
+
+    padding: 30px 25px;
+
+    min-height: 260px;
+
+    border: 1px solid #e2e2e2;
+
+    text-align: left;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.destination h3 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.destination p {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+.destination a {
+    color: #17233b;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.destination a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.experiences {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background-color: white;
+}
+
+.experiences h2 {
+    font-size: 36px;
+
+    font-weight: 400;
+
+    margin-bottom: 15px;
+}
+
+.experiences > p {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+.experience-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.experience {
+    padding: 30px 25px;
+
+    border: 1px solid #e2e2e2;
+
+    min-height: 220px;
+
+    text-align: left;
+}
+
+.experience h3 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.experience p {
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   PRACTICAL INFORMATION
+========================= */
+
+.information {
+    padding: 80px 8%;
+
+    text-align: center;
+
+    background-color: #f7f7f7;
+}
+
+.information h2 {
+    font-size: 36px;
+
+    font-weight: 400;
+
+    margin-bottom: 15px;
+}
+
+.information > p {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+.information-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.information-item {
+    background-color: white;
+
+    padding: 30px;
+
+    border: 1px solid #e2e2e2;
+
+    text-align: left;
+}
+
+.information-item h3 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.information-item p {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.information-item a {
+    color: #17233b;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.information-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+    padding: 65px 8%;
+
+    background-color: #17233b;
+
+    color: white;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 32px;
+
+    font-weight: 400;
+
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.call-to-action {
+    text-align: center;
+
+    padding: 80px 40px;
+
+    background-color: #f5f5f5;
+}
+
+.call-to-action h2 {
+    font-size: 36px;
+
+    font-weight: 400;
+
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.6;
+
+    font-size: 16px;
+}
+
+.call-to-action button {
+    padding: 14px 30px;
+
+    border: none;
+
+    background-color: #17233b;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.call-to-action button:hover {
+    background-color: #253555;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    padding: 60px 8%;
+
+    background-color: #111827;
+
+    color: white;
+}
+
+.footer-col {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+
+    font-size: 17px;
+}
+
+.footer-col a {
+    color: #ccc;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 900px) {
+
+    .links {
+        gap: 15px;
+        overflow-x: auto;
+    }
+
+    .links a {
+        white-space: nowrap;
+    }
+
+    .hero {
+        height: 55vh;
+    }
+
+    .tourism {
+        padding: 50px 8%;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-image {
+        height: 400px;
+    }
+
+    .destination-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .information-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .navbar button {
+        margin-right: 15px;
+    }
+
+    .links {
+        gap: 20px;
+    }
+
+    .links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        height: 45vh;
+    }
+
+    .tourism {
+        padding: 45px 20px;
+    }
+
+    .tourism h1 {
+        font-size: 32px;
+    }
+
+    .tourism p {
+        font-size: 15px;
+    }
+
+    .highlight-image {
+        height: 300px;
+    }
+
+    .highlight-content {
+        padding: 45px 25px;
+    }
+
+    .highlight-content h2 {
+        font-size: 30px;
+    }
+
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 50px 20px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 50px 30px;
+    }
+}
+/* FEATURED EXPERIENCES */
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature-text {
+    height: 130px;
+    padding: 30px 15px;
+    background-color: white;
+}
+
+.feature-text h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.feature-text h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.feature img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    display: block;
+}
+/* ============================= */
+/* INVESTMENT SECTION */
+/* ============================= */
+
+.investment {
+    width: 100%;
+    background: white;
+}
+
+
+/* SECTION TITLE */
+
+.section-title {
+    text-align: center;
+    padding: 70px 20%;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.title-line {
+    width: 100px;
+    height: 1px;
+    background: #172033;
+    margin: 0 auto 25px;
+}
+
+.section-title p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #253858;
+}
+
+
+/* INVESTMENT ROW */
+
+.investment-item {
+    display: flex;
+    width: 100%;
+    min-height: 430px;
+}
+
+
+/* IMAGE */
+
+.investment-image {
+    width: 50%;
+}
+
+.investment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* TEXT */
+
+.investment-content {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.investment-content h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.investment-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.investment-content p {
+    max-width: 520px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+    color: #253858;
+}
+
+
+/* BUTTON */
+
+.investment-content button {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 13px 25px;
+    background: #172033;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* REVERSE ROW */
+
+.investment-item.reverse {
+    flex-direction: row-reverse;
+}
+/* ============================= */
+/* MEET IN RWANDA */
+/* ============================= */
+
+.meet-rwanda {
+    width: 100%;
+    background: white;
+}
+
+
+/* CARDS */
+
+.meet-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+
+/* EACH CARD */
+
+.meet-card {
+    text-align: center;
+}
+
+
+/* CARD TEXT */
+
+.meet-card-text {
+    padding: 30px 15px;
+    height: 130px;
+    box-sizing: border-box;
+}
+
+.meet-card-text h3 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.meet-card-text h2 {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+
+/* CARD IMAGE */
+
+.meet-card img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+    display: block;
+}
+/* ============================= */
+/* SPORTS PARTNERSHIPS */
+/* ============================= */
+
+.sports-partnerships {
+    width: 100%;
+    background: white;
+}
+
+
+/* LOGOS */
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px 40px 70px;
+}
+
+.partner-logos img {
+    width: 90px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
+/* PARTNER CARDS */
+
+.partner-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.partner-card {
+    text-align: center;
+    padding: 35px 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+
+.partner-card h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.partner-card h2 {
+    font-size: 27px;
+    font-weight: 400;
+}
+/* ============================= */
+/* SPORTS PARTNERSHIPS */
+/* ============================= */
+
+.sports-partnerships {
+    padding: 70px 40px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.sports-partnerships h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.sports-partnerships > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: #243b6b;
+}
+
+/* PARTNER LOGOS */
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.partner-logos img {
+    width: 90px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
+/* PARTNER CARDS */
+
+.partner-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.partner {
+    text-align: center;
+}
+
+.partner-text {
+    padding: 30px 15px;
+    min-height: 130px;
+}
+
+.partner-text h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.partner-text h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.partner img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* LAST PARTNER */
+
+.last-partner {
+    width: 25%;
+    text-align: center;
+}
+
+.last-partner .partner-text {
+    min-height: 130px;
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+    background-color: #111c32;
+    color: white;
+    margin-top: 0;
+}
+
+/* FOOTER TOP MENU */
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.footer-menu-item {
+    padding: 25px;
+    border-right: 1px solid #526078;
+    font-weight: bold;
+}
+
+.footer-menu-item:last-child {
+    border-right: none;
+}
+
+.footer-menu-item span {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0.8;
+}
+
+.footer-copy {
+    font-size: 16px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .partner-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .last-partner {
+        width: 50%;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .sports-partnerships {
+        padding: 50px 20px 0;
+    }
+
+    .sports-partnerships h2 {
+        font-size: 32px;
+    }
+
+    .partner-container {
+        grid-template-columns: 1fr;
+    }
+
+    .last-partner {
+        width: 100%;
+    }
+
+    .footer-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-menu-item {
+        border-right: none;
+        border-bottom: 1px solid #526078;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
